@@ -1,0 +1,115 @@
+/* HTML Code */
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Page</title>
+    <link rel="stylesheet" href="Register_style.css">
+    <script src="https://kit.fontawesome.com/dd45c24f18.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="main">
+        <div class="image"><img src="login logo.png" alt="" height="150px"></div>
+        <h1>Registration form</h1>
+        <form action="submit.php" method="post">
+            <div class="registration">
+                <div class="input-with-icon">
+                    <input type="text" id="username" name="Username" placeholder="Full Name">
+                    <i class="fa-solid fa-user" , style="font-size: 24px;"></i>
+                </div>
+                <div class="input-with-icon">
+                    <input type="text" id="username" name="Email" placeholder="E-mail ID is a Username">
+                    <i class="fa-solid fa-envelope" , style="font-size: 24px;"></i>
+                </div>
+                <div class="input-with-icon">
+                    <input type="number" id="number" name="Number" placeholder="Phone Number">
+                    <i class="fa-solid fa-phone" , style="font-size: 24px;"></i>
+                </div>
+                <div class="input-with-icon">
+                    <input type="password" id="password" name="Password" placeholder="Password">
+                    <i class="fa-solid fa-lock" , style="font-size: 24px;"></i>
+                </div>
+                <input type="submit", value="Submit", class="submit">
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
+
+/* CSS Code */
+body {
+    font-family: Arial, sans-serif;
+    height: 95vh;
+    background-image: url('images.jpeg');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.main {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: 40%;
+}
+
+.main h1{
+    text-decoration: underline;
+    text-align: center;
+}
+
+.image {
+    text-align: center;
+}
+
+.registration {
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto;
+    gap: 10px;
+}
+
+.input-with-icon {
+    position: relative;
+    text-align: center;
+}
+
+.input-with-icon input {
+    width: 60%;
+    padding: 15px 15px 15px 40px;
+    text-align: left;
+    border-radius: 25px;
+    box-sizing: border-box;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.input-with-icon i {
+    position: absolute;
+    left: 130px;
+    top: 45%;
+    transform: translateY(-50%);
+    width: 30px;
+    height: 20px;
+}
+
+.submit {
+    width: 60%;
+    padding: 10px 20px;
+    background-color: #FF7074;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    text-align: center; 
+    align-items: center;
+    border: none;
+    margin: auto;
+}
