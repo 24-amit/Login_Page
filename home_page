@@ -1,0 +1,54 @@
+// HTML Code
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Login Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/dd45c24f18.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <div class="main">
+
+        <div class="login_register">
+            <a href="index.html" class="login">Login</a>
+            <a href="About_Us.html" class="about">About Us</a>
+            <a href="Register.html" class="register">Register</a>
+            <a href="Contact.html" class="contact">Contact</a>
+        </div>
+
+        <div class="container">
+            <img src="login logo.png" alt="" height="150px">
+
+            <div class="username_password">
+                <div class="input-with-icon">
+                    <input type="text" , id="firstname" , name="firstname" , placeholder="Username">
+                    <i class="fa-solid fa-user", style="font-size: 24px;"></i>
+                </div>
+                <div class="input-with-icon">
+                    <input type="password" , id="password" , name="firstname" , placeholder="Password">
+                    <i class="fa-solid fa-lock", style="font-size: 24px;"></i>
+                </div>
+                <a href="#">GET STARTED</a>
+            </div>
+
+            <div class="forgot">
+                <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider"></span>
+                    <label class="logged_in" , for="keep_logged_in">Keep Logged In</label>
+                </label>
+                <a href="Forgot.html">Forgot Password?</a>
+            </div>
+
+            <div class="create_account">
+                <a href="Register.html", class="create">CREATE ACCOUNT</a>
+                <a href="Contact.html", class="help">NEED HELP?</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
